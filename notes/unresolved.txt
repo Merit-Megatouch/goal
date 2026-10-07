@@ -2,21 +2,3 @@
 # megatouch-host loads the game with RTLD_NOW, so each of these must be defined
 # (usually in src/host/loader_services.cpp) before the game will start.
 # symbol | needed by
-LinkedWithCnt | goal.so
-WhoWeArePlaying | goal.so
-GetPackets(char*, int) | goal.so
-BitmapConvPal(_RADBitmap*, _RADBitmap*, unsigned char) | goal.so
-BitmapTextTTF(_RADBitmap*, char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | goal.so
-BitmapColorize(_RADBitmap*, int, int, int, int) | goal.so
-BitmapGetPixel(_RADBitmap*, unsigned long, unsigned long) | goal.so
-SendPilePacket(char*, int) | goal.so
-InFormOfIDUsage(unsigned char, unsigned char) | goal.so
-ScreenIsTouched() | goal.so
-ProcessRTPackets() | goal.so
-BitmapPaletteMerge(_RADBitmap*, _RADBitmap*) | goal.so
-MouseX() | goal.so
-MouseY() | goal.so
-GetMyId() | goal.so
-PlayWave(char*, unsigned short, int, int, int, bool) | goal.so
-GetMaster() | goal.so
-Translator::nTranslate(char*, unsigned int, char const*) | goal.so
